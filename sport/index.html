@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comfortaa&family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+    <title>Спортивний блог</title>
+    <style>
+
+.nabla {
+            font-family: "Nabla", system-ui;           
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+                "EDPT" 100,
+                "EHLT" 12;
+                
+}
+.nabla h2 {
+    font-size: 66px;
+    margin: 0;
+}
+
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* Медіа-запит для ширини екрану менше 768px */
+@media screen and (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    .image-item {
+        flex-basis: calc(50% - 20px);
+    }
+
+    .menu {
+        width: calc(50% - 20px);
+    }
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    ul {
+        display: none;
+        text-align: center;
+    }
+
+    ul.active {
+        display: block;
+    }
+
+    li {
+        display: block;
+        margin: 10px 0;
+    }
+    .dropdown {
+     float: left;
+    overflow: hidden;
+    }
+
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sport blog</h1>
+    </header>
+    <nav>
+        <a href="https://moodle.elct.lnu.edu.ua/login/index.php">Посилання на сайт</a>
+    </nav>
+    <div class="navbar">
+        <div class="dropdown">
+          <button class="dropbtn">Ще щось 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="https://www.youtube.com/watch?v=VgJwLQjT8Is">Вправи</a>
+            <a href="https://www.youtube.com/watch?v=ARC84zxLdp0">Як спати!</a>
+            <a href="https://credo.pro/2009/01/63">Як справи?</a>
+          </div>
+        </div> 
+      </div>
+    <main>
+        <div class="image-item">
+            <img src="C:\Users\andre\Desktop\звіти\Web\sport\images\1.jpg" alt="Oopss!">
+            <div class="nabla">
+                <h2>190 kg</h2>
+            </div>
+        </div>
+        <div class="image-item">
+            <img src="C:\Users\andre\Desktop\звіти\Web\sport\images\2.jpg" alt="Oopss!">
+            <div class="nabla">
+                <h2>490 kg</h2>
+            </div>
+        </div>
+        <div class="image-item">
+            <img src="C:\Users\andre\Desktop\звіти\Web\sport\images\3.jpg" alt="Oopss!">
+            <div class="nabla">
+                <h2>320 kg</h2>
+            </div>
+        </div>
+    </main>
+    <div class="menu-container">
+        <div class="menu">
+            <div class="menu__wrap">
+                <h1 class="menu__heading">Понеділок</h1>
+                <p class="menu__description">Вправи для грудних м'язів
+                а також для біцепсу, пресу
+                </p>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menu__wrap">
+                <h1 class="menu__heading">Середа</h1>
+                <p class="menu__description">Вправи для м'язів спини
+                а також для тріцепсу і задніх дельт
+                </p>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menu__wrap">
+                <h1 class="menu__heading">П'ятниця</h1>
+                <p class="menu__description">Вправи для м'язів ніг
+                а також для середніх дельт та трапецівидних
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p></p>
+    </footer>
+</body>
+</html>
